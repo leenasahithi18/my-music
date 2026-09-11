@@ -731,3 +731,70 @@ if (selectedSong !== null &&
 // =====================================
 
 displayPlaylist();
+// =====================================
+// REGISTER USER
+// =====================================
+
+function registerUser() {
+
+    let name =
+        document.getElementById("name").value;
+
+    let email =
+        document.getElementById("email").value;
+
+    let password =
+        document.getElementById("password").value;
+
+    let confirmPassword =
+        document.getElementById("confirmPassword").value;
+
+
+    if (password !== confirmPassword) {
+
+        alert("❌ Passwords do not match!");
+
+        return;
+
+    }
+
+
+    alert(
+        "🎉 Registration successful!\nWelcome to TuneWave, " +
+        name
+    );
+
+
+    window.location.href =
+        "login.html";
+
+}
+// =====================================
+// LOGIN USER
+// =====================================
+
+function loginUser() {
+
+    let email =
+        document.getElementById("loginEmail").value;
+
+    let password =
+        document.getElementById("loginPassword").value;
+
+
+    if (email === "" || password === "") {
+
+        alert("⚠️ Please enter email and password.");
+
+        return;
+
+    }
+
+
+    alert("🎉 Login successful!");
+
+
+    window.location.href =
+        "home.html";
+
+}
