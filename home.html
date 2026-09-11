@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TuneWave - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h1>🎵 TuneWave</h1>
+
+        <nav>
+
+            <a href="home.html">🏠 Home</a>
+
+            <a href="songs.html">🎵 Songs</a>
+
+            <a href="playlist.html">📂 Playlists</a>
+
+            <a href="premium.html">⭐ Premium</a>
+
+            <a href="login.html">🚪 Logout</a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+        <h2>Welcome to TuneWave 🎧</h2>
+
+        <p>Listen to your favorite music anytime.</p>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search songs..."
+            >
+
+            <button onclick="searchSongs()">
+                🔍 Search
+            </button>
+
+        </div>
+
+
+        <!-- RECENTLY PLAYED -->
+
+        <h2>Recently Played 🎵</h2>
+
+        <div class="song-container">
+
+
+            <!-- SONG 1 -->
+
+            <div class="song-card">
+
+                <img
+                    src="song1.jpg"
+                    alt="Believer"
+                >
+
+                <h3>Believer</h3>
+
+                <p>Imagine Dragons</p>
+
+                <a href="player.html?song=0">
+                    <button>▶️ Play</button>
+                </a>
+
+            </div>
+
+
+            <!-- SONG 2 -->
+
+            <div class="song-card">
+
+                <img
+                    src="song2.jpg"
+                    alt="Perfect"
+                >
+
+                <h3>Perfect</h3>
+
+                <p>Ed Sheeran</p>
+
+                <a href="player.html?song=1">
+                    <button>▶️ Play</button>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- POPULAR SONGS -->
+
+        <h2>Popular Songs 🔥</h2>
+
+        <div class="song-container">
+
+
+            <!-- SONG 3 -->
+
+            <div class="song-card">
+
+                <img
+                    src="song3.jpg"
+                    alt="Faded"
+                >
+
+                <h3>Faded</h3>
+
+                <p>Alan Walker</p>
+
+                <a href="player.html?song=2">
+                    <button>▶️ Play</button>
+                </a>
+
+            </div>
+
+
+            <!-- SONG 4 -->
+
+            <div class="song-card">
+
+                <img
+                    src="song4.jpg"
+                    alt="Closer"
+                >
+
+                <h3>Closer</h3>
+
+                <p>The Chainsmokers</p>
+
+                <a href="player.html?song=3">
+                    <button>▶️ Play</button>
+                </a>
+
+            </div>
+
+
+            <!-- SONG 5 -->
+
+            <div class="song-card">
+
+                <img
+                    src="song5.jpg"
+                    alt="Something Just Like This"
+                >
+
+                <h3>Something Just Like This</h3>
+
+                <p>The Chainsmokers</p>
+
+                <a href="player.html?song=4">
+                    <button>▶️ Play</button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

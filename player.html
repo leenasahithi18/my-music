@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TuneWave - Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h1>🎵 TuneWave</h1>
+
+        <nav>
+
+            <a href="home.html">🏠 Home</a>
+
+            <a href="songs.html">🎵 Songs</a>
+
+            <a href="playlist.html">📂 Playlists</a>
+
+            <a href="premium.html">⭐ Premium</a>
+
+            <a href="login.html">🚪 Logout</a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+        <h2>🎧 Now Playing</h2>
+
+        <div class="player-box">
+
+            <!-- SONG IMAGE -->
+
+            <img id="playerImage"
+                 src="song1.jpg"
+                 alt="Album Cover">
+
+
+            <!-- SONG DETAILS -->
+
+            <h2 id="songTitle">Believer</h2>
+
+            <p id="artistName">Imagine Dragons</p>
+
+
+            <!-- AUDIO PLAYER -->
+
+            <audio id="audioPlayer" controls>
+
+                <source src="believer.mp3" type="audio/mpeg">
+
+                Your browser does not support the audio element.
+
+            </audio>
+
+
+            <br><br>
+
+
+            <!-- PROGRESS -->
+
+            <input type="range"
+                   id="progressBar"
+                   value="0"
+                   min="0"
+                   max="100">
+
+
+            <p id="timeDisplay">
+                0:00 / 0:00
+            </p>
+
+
+            <!-- PLAYER BUTTONS -->
+
+            <div class="player-controls">
+
+                <button onclick="previousSong()">
+                    ⏮️
+                </button>
+
+                <button onclick="togglePlay()" id="playButton">
+                    ▶️
+                </button>
+
+                <button onclick="nextSong()">
+                    ⏭️
+                </button>
+
+            </div>
+
+
+            <br>
+
+
+            <!-- VOLUME -->
+
+            <label>🔊 Volume</label>
+
+            <br><br>
+
+            <input type="range"
+                   id="volumeBar"
+                   min="0"
+                   max="1"
+                   step="0.1"
+                   value="1">
+
+
+            <br><br>
+
+
+            <!-- PLAYLIST -->
+
+            <button onclick="addToPlaylist(
+                document.getElementById('songTitle').innerText
+            )">
+
+                ➕ Add to Playlist
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
